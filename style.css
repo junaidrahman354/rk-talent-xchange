@@ -85,7 +85,7 @@ section.home{
 
 .home .top-bar{
     width: 100%;
-    padding: 15px 0px;
+    padding: 15px 60px;
     background-color: var(--bg-light-clr);
     display: flex;
     justify-content: space-between;
