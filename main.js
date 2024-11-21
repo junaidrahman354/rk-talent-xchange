@@ -110,4 +110,17 @@ AOS.init({
     duration: 1000
 });
 
+// window.addEventListener("scroll", LefttoRight = () =>{
+//     var main = document.querySelector(".first_box");
+//     var windowHeight = window.innerHeight;
+//     var revealtop = main.getBoundingClientRect().top;
+//     var revealPoint = 200;
+
+//     if(revealtop < windowHeight - revealPoint){
+//         main.classList.add('lefttoRight')
+//     }else{
+//         main.classList.remove('lefttoRight');
+//     }
+// }) 
+
  
