@@ -110,6 +110,26 @@ AOS.init({
     duration: 1000
 });
 
+
+const signInBtn = document.getElementById('signInBtn');
+const signInForm = document.getElementById('signInForm');
+const body = document.body;
+
+signInBtn.addEventListener('click', function () {
+    signInForm.style.display = 'flex';  // Show form
+    body.classList.add('dimmer'); // Dim the background
+});
+
+// Optionally, hide form when clicking outside of it
+signInForm.addEventListener('click', function (e) {
+    if (e.target === signInForm) {
+        signInForm.style.display = 'none';  // Hide form
+        body.classList.remove('dimmer'); // Remove dimming
+    }
+});
+
+
+
 // window.addEventListener("scroll", LefttoRight = () =>{
 //     var main = document.querySelector(".first_box");
 //     var windowHeight = window.innerHeight;

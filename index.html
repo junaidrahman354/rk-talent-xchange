@@ -70,7 +70,7 @@
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#blog">Blog's</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <button class="btn nav_button">Sing In</button>
+                    <button class="btn nav_button" id="signInBtn">Sign In</button>
                 </ul>
                
                 <div class="menu-btn">
@@ -80,42 +80,53 @@
                 </div>
             </nav>
 
-            <section class="main swiper">
-                <div class="text-wrapper swiper-wrapper">
-                    <div class="slide swiper-slide">
-                        <img src="./images/Our Vision.jpg" alt="">
-                        <div class="image-data">
-                            <h3>Transform Your Business with Our Expert Freelancing Services</h3>
-                            <h1>Get Unlimited Opportunities with RK TalentXchange for Your Business</h1>
-                            <p>Best digital solutions and professional trainings for businesses worldwide. From Web Development to SEO, Digital Marketing, and more. Let’s work together to enhance your brand’s visibility and growth.</p>
-                            <a href="#services"><button class="btn home-read-more-btn">Start Your Journey Today! </button></a>
-                        </div>
-                    </div>
-                    <div class="slide swiper-slide">
-                        <img src="./images/Our Vision1.jpg" alt="">
-                        <div class="image-data">
-                            <h3>Learn the Most Important Skills That Drive Success in every field</h3>
-                            <h1> Master today’s In-Demand Freelancing Skills with Our Expert-Led Trainings  </h1>
-                            <p>Access high-quality and In-Demand courses on Web Development and Designing, SEO, Digital Marketing, Graphic Designing, e-Commerce and more. Learn top trending skills from expert instructors at your own pace and start earning from day one.</p>
-                            <a href=""><button class="btn home-read-more-btn">Explore Our Training Courses </button></a>
-                        </div>
-                    </div>
-                    <div class="slide swiper-slide">
-                        <img src="./images/Our Services2.jpg" alt="">
-                        <div class="image-data">
-                            <h3>Achieve Desired Satisfactory Results with Data-Driven Marketing </h3>
-                            <h1>Boost Your Online Visibility with Our Proven Digital Marketing Strategies</h1>
-                            <p>From Social Media to PPC Ads, we help you create and manage powerful, results-driven campaigns for your business. Grow your business with ROI-focused digital marketing and achieve desired results.</p>
-                        <button class="btn home-read-more-btn">Get Your Free Digital Strategy Session </button>
-                        </div>
+            
+            <div id="signInForm" class="sign-in-form" style="display: none;">
+                <form>
+                    <label for="f_name">First Name:</label>
+                    <input type="text" id="f_name" name="f_name">
+                    <label for="l_name">Last Name:</label>
+                    <input type="text" id="l_name" name="l_password">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="hero-section">
+                <div class="slide active">
+                <img src="./images/Our Services2.jpg" alt="Image 1">
+                <div class="content">
+                    <h3>Transform Your Business with Our Expert Freelancing Services</h3>
+                    <h1>Get Unlimited Opportunities with RK TalentXchange for Your Business</h1>
+                    <p>Best digital solutions and professional trainings for businesses worldwide. From Web Development to SEO, Digital Marketing, and more. Let’s work together to enhance your brand’s visibility and growth.</p>
+                    <a href="#services"><button class="btn home-read-more-btn">Start Your Journey Today! </button></a>
+                </div>
+                </div>
+                
+                <div class="slide">
+                    <img src="./images/Our Mission1.jpg" alt="Image 1">
+                    <div class="content">
+                    <h3>Transform Your Business with Our Expert Freelancing Services</h3>
+                    <h1>Get Unlimited Opportunities with RK TalentXchange for Your Business</h1>
+                    <p>Best digital solutions and professional trainings for businesses worldwide. From Web Development to SEO, Digital Marketing, and more. Let’s work together to enhance your brand’s visibility and growth.</p>
+                    <a href="#services"><button class="btn home-read-more-btn">Start Your Journey Today! </button></a>
                     </div>
                 </div>
-        
-                <div class="swiper-pagination"></div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </section>
+                
+                <div class="slide">
+                    <img src="./images/Our Mission1.jpg" alt="Image 1">
+                    <div class="content">
+                    <h3>Transform Your Business with Our Expert Freelancing Services</h3>
+                    <h1>Get Unlimited Opportunities with RK TalentXchange for Your Business</h1>
+                    <p>Best digital solutions and professional trainings for businesses worldwide. From Web Development to SEO, Digital Marketing, and more. Let’s work together to enhance your brand’s visibility and growth.</p>
+                    <a href="#services"><button class="btn home-read-more-btn">Start Your Journey Today! </button></a>
+                    </div>
+                </div>
+            </div>
+
         </section>
     
 
@@ -356,35 +367,39 @@
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-contents">
-            <!-- <div class="about-left-col" data-aos="fade-right">
-                <img src="./images/about/about-img.jpg" alt="">
-                <div class="about-img-bg"></div>
-            </div> -->
-            <div class="about-right-col" data-aos="fade-up">
-                <header class="section-heading">
-                    <h3>Why Choose Us</h3>
-                    <h1>Why RK TalentXchange?</h1>
-                    <p>At <strong> RK TalentXchange, </strong> we mainly focus on results. Our approach is driven by a passion for excellence, attention to detail, and a commitment to delivering measurable outcomes to our clients. Here’s the reason why our clients choose us:</p>
-                </header>
-                <ul class="about-facilities">
-                    <li class="facility-box"> <strong>Global Expertise:</strong> Since a few years, RK TalentXchange has been serving a huge number of clients across the world with expert tailored solutions to meet diverse business needs.</li>
-                    <li class="facility-box"><strong>Proven Success:</strong> We have helped a huge number of businesses to increase their conversions, expand their reach, and grow their online presence through expert digital marketing strategies. We are concerned with their satisfactory results.</li>
-                    <li class="facility-box"><strong>Skilled Professionals:</strong> Our team consists of industry experts in web development, web design, SEO, digital marketing, and e-commerce.  </li>
-                    <li class="facility-box"><strong>Customized Solutions:</strong> Whether you're a small business or a large corporation,<strong> RK TalentXchange</strong> offers tailored solutions designed specifically for you. </li>
-                    <li class="facility-box"><strong>Ongoing Support:</strong> We believe in building long-term relationships and offer ongoing support to ensure the success of your projects. You can get in touch whenever you feel our need.</li>
-                </ul>
-            </div>
-            <div class="about-left-col" data-aos="fade-right">
-                <img src="./images/About us 3.jpg" alt="">
-            </div>
+    <div class="choose-section">
+        <div class="choose-left-col" data-aos="fade-up">
+          <header class="section-heading">
+            <h3>Why Choose Us</h3>
+            <h1>Why RK TalentXchange?</h1>
+            <p>
+              At <strong>RK TalentXchange,</strong> we mainly focus on results. Our approach is driven by a passion for excellence, attention to detail, and a commitment to delivering measurable outcomes to our clients. Here’s the reason why our clients choose us:
+            </p>
+          </header>
         </div>
-
-            <!-- <div class="about-bg-blob blob-animation">
-                <img src="./images/bg-blobs/blob-1.png" alt="">
-            </div> -->
-    </section>
+      
+        <div class="choose-right-col" data-aos="fade-right">
+          <img src="./images/About Us 4.jpg" alt="choose Us Image" class="choose-image">
+        </div>
+      
+        <ul class="choose-facilities">
+          <li class="facility-box">
+            <strong>Global Expertise:</strong> Since a few years, RK TalentXchange has been serving a huge number of clients across the world with expert tailored solutions to meet diverse business needs.
+          </li>
+          <li class="facility-box">
+            <strong>Proven Success:</strong> We have helped a huge number of businesses to increase their conversions, expand their reach, and grow their online presence through expert digital marketing strategies. We are concerned with their satisfactory results.
+          </li>
+          <li class="facility-box">
+            <strong>Skilled Professionals:</strong> Our team consists of industry experts in web development, web design, SEO, digital marketing, and e-commerce.
+          </li>
+          <li class="facility-box">
+            <strong>Customized Solutions:</strong> Whether you're a small business or a large corporation, <strong>RK TalentXchange</strong> offers tailored solutions designed specifically for you.
+          </li>
+          <li class="facility-box">
+            <strong>Ongoing Support:</strong> We believe in building long-term relationships and offer ongoing support to ensure the success of your projects. You can get in touch whenever you feel our need.
+          </li>
+        </ul>
+      </div>
 
     <section class="team" id="team">
         <header class="section-heading">
@@ -587,7 +602,7 @@
                         </div>
                         <div class="information">
                             <i class="fa-solid fa-phone-volume icon"></i>
-                            <p>+92340 7380781</p>
+                            <p>+971 56 228 4041 <br> +92340 7380781</p>
                         </div>
                     </div>
                     <div class="social-media">
@@ -671,7 +686,7 @@
                 <a href="#">Team</a>
                 <a href="#">Blog's</a>
                 <a href="#">Contacts</a>
-                <a href="#">Privasy & Policy</a>
+                <a href="#">Privacy & Policy</a>
             </div>
         </div>
 
@@ -686,7 +701,7 @@
                 </div>
                 <div class="contact-row">
                     <span>Phone</span>
-                    <span>+92340 7380781 </span>
+                    <span>+971 56 228 4041 <br> +92340 7380781</span>
                 </div>
                 <div class="contact-row">
                     <span>Website</span>
@@ -747,6 +762,29 @@
                 link.textContent = 'Learn More'; // Revert link text
             }
         }
+
+        const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) {
+      slide.classList.add('active');
+    }
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length; // Loop back to first slide
+  showSlide(currentSlide);
+}
+
+// Initialize the first slide
+showSlide(currentSlide);
+
+// Automatically switch slides every 4 seconds
+setInterval(nextSlide, 4000);
     </script>
 </body>
 </html>
