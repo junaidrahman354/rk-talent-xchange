@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital website</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive-style.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/form.css">
     <!-- <link rel="stylesheet" href="../slider/style.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -70,7 +71,7 @@
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#blog">Blog's</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <button class="btn nav_button" id="signInBtn">Sign In</button>
+                    <button class="btn nav_button" id="form-open">Get a Quote</button>
                 </ul>
                
                 <div class="menu-btn">
@@ -80,19 +81,73 @@
                 </div>
             </nav>
 
-            
-            <div id="signInForm" class="sign-in-form" style="display: none;">
-                <form>
-                    <label for="f_name">First Name:</label>
-                    <input type="text" id="f_name" name="f_name">
-                    <label for="l_name">Last Name:</label>
-                    <input type="text" id="l_name" name="l_password">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-                    <button type="submit">Submit</button>
-                </form>
+            <div class="form_container">
+                <i class="fa-solid fa-xmark form_close"></i>
+                <div class="form login_form">
+                    <form action="#">
+                        <h2>Login</h2>
+                        <div class="input_box">
+                            <input type="email" placeholder="Email Address" required />
+                            <i class="fa-regular fa-envelope email"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Password" required />
+                            <i class="fa-solid fa-lock password"></i>
+                            <!-- <i class="uil uil-eye-slash pw-hide"></i> -->
+                        </div>
+    
+                        <div class="option_field">
+                            <span class="checkbox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Remember me</label>
+                            </span>
+                            <a href="#" class="forget_pass">Forget Password?</a>
+                        </div>
+    
+                        <button class="button">Login Now</button>
+    
+                        <div class="login_signup">
+                            Don't have an account? <a href="#" id="signup">Sign Up</a>
+                        </div>
+                    </form>
+                </div>
+    
+    
+                <div class="form signup_form">
+                    <form action="#">
+                        <h2>Sign Up</h2>
+    
+                        <div class="input_box">
+                            <input type="text" placeholder="Your Name" required />
+                            <i class="fa-regular fa-user user"></i>
+                        </div>
+    
+                        <div class="input_box">
+                            <input type="email" placeholder="Email Address" required />
+                            <i class="fa-regular fa-envelope email"></i>
+                        </div>
+    
+                        <div class="input_box">
+                            <input type="password" placeholder="Create Password" required />
+                            <i class="fa-solid fa-lock password"></i>
+                            <!-- <i class="uil uil-eye-slash pw-hide"></i> -->
+                        </div>
+    
+                        <div class="input_box">
+                            <input type="password" placeholder="Confirm Password" required />
+                            <i class="fa-solid fa-lock password"></i>
+                            <!-- <i class="uil uil-eye-slash pw-hide"></i> -->
+                        </div>
+    
+                        <button class="button">Sign Up Now</button>
+    
+                        <div class="login_signup">
+                            Already have an account? <a href="#" id="login">Log In</a>
+                        </div>
+                    </form>
+                </div>
+    
+    
             </div>
 
             <div class="hero-section">
@@ -112,7 +167,7 @@
                     <h3>Learn the Most Important Skills That Drive Success in every field</h3>
                     <h1>Master today’s In-Demand Freelancing Skills with Our Expert-Led Trainings</h1>
                     <p>Access high-quality and In-Demand courses on Web Development and Designing, SEO, Digital Marketing, Graphic Designing, e-Commerce and more. Learn top trending skills from expert instructors at your own pace and start earning from day one.</p>
-                    <a href="#services"><button class="btn home-read-more-btn">: Explore Our Training Courses  </button></a>
+                    <a href="#services"><button class="btn home-read-more-btn"> Explore Our Training Courses  </button></a>
                     </div>
                 </div>
                 
@@ -740,14 +795,15 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/form.js"></script>
     <script>
            function toggleText(link) {
             // Get the hidden text span in the same parent element
